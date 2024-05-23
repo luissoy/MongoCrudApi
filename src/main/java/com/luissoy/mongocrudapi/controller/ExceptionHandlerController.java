@@ -58,7 +58,7 @@ public class ExceptionHandlerController extends ResponseEntityExceptionHandler {
             , WebRequest request
     ) {
         return getResponseEntity(
-                CustomPropertiesBean.getProperty("exception.message.generic")
+                CustomPropertiesBean.getProperty("exception.generic")
                 , ex.getClass().getName()
                 , HttpStatus.INTERNAL_SERVER_ERROR
         );
